@@ -1,0 +1,71 @@
+{
+	"id": "dcb856b9-f92f-44a5-87ce-4cc76cf6cfed",
+	"createdAt": "2025-12-04T08:10:26.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/annapurnars/EMS-Neptune.git",
+		"branch": "EMS-CRUD"
+	},
+	"name": "EMS",
+	"description": "Add, Edit and Delete employees",
+	"ver": "25.12.05.1418",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": true,
+	"roles": [],
+	"apps": [
+		{
+			"id": "8a06d7ee-b4a5-4f2e-a0a7-a70eb7d262ad",
+			"application": "employeestest",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "4324246b-a430-475f-8d5d-96950447f6f4",
+			"name": "Employees",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "8dc67ffb-5358-4ef1-ad60-4794cfd2db61",
+			"name": "employees",
+			"description": "Saves employee details"
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"tile_layout": [],
+	"category": [],
+	"tilegroup_layout": [],
+	"launchpad": [],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": []
+}
