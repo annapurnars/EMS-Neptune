@@ -1,0 +1,74 @@
+{
+	"id": "8dc67ffb-5358-4ef1-ad60-4794cfd2db61",
+	"createdAt": "2025-12-02T08:06:12.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "a0499dc9-f7c2-4577-af97-0e2119ae1332",
+			"fieldName": "FirstName",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "First name of the employee",
+			"isNullable": false
+		},
+		{
+			"id": "4cec64b7-4bc0-4852-d5a9-5f80e593e919",
+			"fieldName": "LastName",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Last name of the employee",
+			"isNullable": true
+		},
+		{
+			"id": "7be19fd9-9268-44dd-bc78-e23224b08c58",
+			"fieldName": "Email",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Email of the employee",
+			"isNullable": false
+		},
+		{
+			"id": "ee6c6dcb-6a86-497c-9a9a-66322079cf68",
+			"fieldName": "Department",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Department the employee belongs to",
+			"isNullable": true
+		},
+		{
+			"id": "26ece79e-7d87-455e-ed54-af9f88c23a36",
+			"fieldName": "Contact",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"description": "Contact number of the employee",
+			"isNullable": true
+		},
+		{
+			"id": "a2bb9616-6857-4afd-d986-c9afdb428c00",
+			"fieldName": "Address",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Address of the Employee",
+			"isNullable": true
+		},
+		{
+			"id": "07f917d8-3293-4e2f-a100-41d54f814c79",
+			"fieldName": "Project",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Project the employee is working in",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "employees",
+	"description": "Saves employee details",
+	"ver": "25.12.05.1424",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "dcb856b9-f92f-44a5-87ce-4cc76cf6cfed",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

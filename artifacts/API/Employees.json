@@ -1,0 +1,372 @@
+{
+	"id": "4324246b-a430-475f-8d5d-96950447f6f4",
+	"createdAt": "2025-12-03T08:01:57.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "382f4e24-ce87-4d97-87ec-92439f6dac01",
+			"path": "/employees",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1, fieldname2, fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "employees"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2bce8fc4-0e6e-4024-9ca0-0d45b0667a4d",
+			"path": "/employees",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "employees"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "employees"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "19b4c837-dee4-4e4e-9b87-21f0a1eeabaf",
+			"path": "/employees",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "employees"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "employees"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "aecfaa81-8d7f-4bba-822d-be86430d018c",
+			"path": "/employees",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "employees"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "e29fe285-3a79-4132-a3e6-b27f34b475eb",
+			"path": "/employees/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "c466d5f3-7033-42b8-ba88-41e208e13fcf",
+			"name": "employees",
+			"properties": [
+				{
+					"id": "92d870c9-0899-4269-8c3b-8a5c62042770",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "17d7b98c-4e7d-42d0-a4ac-772eed3b5f03",
+					"parent": "",
+					"name": "FirstName",
+					"description": "First name of the employee",
+					"objectType": "string"
+				},
+				{
+					"id": "8972cef3-a32b-4adf-bcdd-8fcab6c61738",
+					"parent": "",
+					"name": "LastName",
+					"description": "Last name of the employee",
+					"objectType": "string"
+				},
+				{
+					"id": "13d79456-7de3-4a07-8689-55bbb204047e",
+					"parent": "",
+					"name": "Email",
+					"description": "Email of the employee",
+					"objectType": "string"
+				},
+				{
+					"id": "09ae7d14-840a-4ba4-9c6e-d439a48e2ce9",
+					"parent": "",
+					"name": "Department",
+					"description": "Department the employee belongs to",
+					"objectType": "string"
+				},
+				{
+					"id": "e581a1ac-9277-44d9-b2de-e2b19fd29de5",
+					"parent": "",
+					"name": "Contact",
+					"description": "Contact number of the employee",
+					"objectType": "integer"
+				},
+				{
+					"id": "ea0136c6-f0d3-4f95-b6c1-32ae6ed49cd7",
+					"parent": "",
+					"name": "Address",
+					"description": "Address of the Employee",
+					"objectType": "string"
+				},
+				{
+					"id": "69d646e2-3cab-42ba-accc-de0a66d7d3b5",
+					"parent": "",
+					"name": "Project",
+					"description": "Project the employee is working in",
+					"objectType": "string"
+				},
+				{
+					"id": "844041a8-387f-465d-bc15-0e63be16ac93",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "8f480abe-0c4b-4d84-a242-b34cea0d1379",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created by",
+					"objectType": "string"
+				},
+				{
+					"id": "eba4fe41-fe43-4dfd-8584-f4e0efda5de2",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "81e34f1f-79d6-4bc9-87a9-7054a0800fa7",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated by",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "77b4170e-3202-4a7a-9cd3-0a7afd3ef5bd",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "fd49bf20-cff9-48d2-8e71-c4620d3dff40",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "f7c4dcef-f2d2-479d-b405-2338511c6509",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "dde90afb-7471-492d-8641-27d4248d06c8",
+			"name": "count",
+			"properties": [
+				{
+					"id": "237357a9-1f36-4654-a422-dc6283428cb6",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "Employees",
+	"endpoint": "/api/entity",
+	"ver": "25.12.05.1423",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "dcb856b9-f92f-44a5-87ce-4cc76cf6cfed",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}
